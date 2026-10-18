@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Raj Kachare - MIS Professional, Finance Enthusiast and Analytical Thinker">
+<title>Raj Kachare | Portfolio</title>
+
+<style>
+:root {
+  --navy:#0b1024;
+  --navy2:#151e40;
+  --blue:#168cff;
+  --purple:#923cf5;
+  --pink:#f02dbd;
+  --text:#17213d;
+  --muted:#68748e;
+  --light:#f4f7ff;
+  --white:#fff;
+  --shadow:0 15px 40px rgba(35,52,105,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  font-family:Inter,Arial,sans-serif;
+  color:var(--text);
+  line-height:1.65;
+  background:white;
+}
+a{text-decoration:none;color:inherit}
+button,input,textarea{font:inherit}
+.container{width:min(1120px,calc(100% - 36px));margin:auto}
+section{padding:78px 0}
+header{
+  position:sticky;top:0;z-index:100;
+  color:white;background:rgba(11,16,36,.96);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid #ffffff18;
+}
+.nav{
+  min-height:72px;display:flex;align-items:center;
+  justify-content:space-between;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand-mark{
+  display:grid;place-items:center;width:43px;height:43px;
+  border-radius:13px;color:white;
+  background:linear-gradient(135deg,var(--blue),var(--purple),var(--pink));
+}
+.nav-links{display:flex;align-items:center;gap:23px;font-size:.92rem}
+.nav-links a{color:#e4e9ff}
+.nav-links a:hover{color:#72e1ff}
+.menu-btn{
+  display:none;background:transparent;color:white;
+  border:1px solid #526080;border-radius:10px;padding:7px 12px;
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:8px;border:0;border-radius:50px;padding:12px 20px;
+  color:white;font-weight:750;cursor:pointer;
+  background:linear-gradient(110deg,var(--blue),var(--purple),var(--pink));
+  box-shadow:0 8px 22px #7045d533;
+  transition:transform .25s,filter .25s;
+}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.1)}
+.btn-outline{background:transparent;border:1px solid #ffffff70;box-shadow:none}
+.eyebrow{
+  color:#72e1ff;font-size:.82rem;font-weight:800;
+  letter-spacing:.12em;text-transform:uppercase;
+}
+.gradient-text{
+  background:linear-gradient(100deg,#32c5ff,#a45bff,#ff55ce);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero{
+  position:relative;overflow:hidden;color:white;
+  background:
+    radial-gradient(ellipse at 80% 30%,#253a78 0%,transparent 34%),
+    radial-gradient(ellipse at 5% 100%,#4b1685 0%,transparent 34%),
+    linear-gradient(135deg,var(--navy),#101b3d 70%,var(--navy));
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 40px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  min-height: auto;
+}
+h1{font-size:clamp(2.8rem,6vw,4.7rem);line-height:1.08;letter-spacing:-.05em;margin:14px 0}
+.hero h2{font-size:1.15rem;font-weight:600;color:#c5eaff;margin:14px 0}
+.hero-copy{color:#d7def5;max-width:600px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.socials{display:flex;gap:10px;margin-top:22px}
+.socials a{
+  width:39px;height:39px;display:grid;place-items:center;
+  border-radius:50%;background:#ffffff14;border:1px solid #ffffff25;
+  font-size:.82rem;font-weight:800;
+}
+.portrait-wrap{
+  position:relative;width:min(200px,100%);aspect-ratio:1;
+  margin:auto;display:grid;place-items:center;
+}
+.portrait-wrap {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  max-width: 100%;
+
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+
+.portrait-ring {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #00d5ff,
+    #7b4dff,
+    #ff37bf
+  );
+}
+
+.portrait-ring img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 5px solid var(--navy);
+}
+
+.portrait-placeholder{
+  width:100%;height:100%;border-radius:50%;display:none;
+  place-items:center;text-align:center;color:white;
+  background:linear-gradient(145deg,#253a70,#151b35);
+  border:5px solid var(--navy);padding:25px;
+}
+.portrait-placeholder span{font-size:4rem;display:block}
+.floating-note{
+  position:absolute;right:-28px;bottom:20px;padding:12px 17px;
+  border:1px solid #ffffff26;border-radius:15px;
+  background:#17254c;box-shadow:var(--shadow);
+  transform:rotate(3deg);font-size:.88rem;
+}
+.section-alt{background:linear-gradient(135deg,#f7f9ff,#eef3ff)}
+.section-heading{margin-bottom:30px}
+.section-heading .eyebrow{color:#6a3be8}
+.section-heading h2{font-size:clamp(2rem,4vw,2.7rem);line-height:1.2;margin:6px 0}
+.section-heading p{color:var(--muted);margin-top:9px}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}
+.about-copy{color:#52607d;font-size:1.02rem}
+.info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.info-item{padding:13px 15px;background:white;border:1px solid #e5eaff;border-radius:14px}
+.info-item strong{display:block;font-size:.85rem;color:#1a2750}
+.info-item span{font-size:.9rem;color:var(--muted);overflow-wrap:anywhere}
+.about-art{
+  min-height:300px;border-radius:24px;padding:30px;color:white;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  background:radial-gradient(circle at 75% 20%,#ff70d4,transparent 28%),
+  linear-gradient(135deg,#0e8dff,#633ce6 55%,#1c1746);
+  box-shadow:var(--shadow);
+}
+.about-art .big-emoji{font-size:4rem;margin-bottom:auto}
+.about-art h3{font-size:1.65rem}
+.about-art p{color:#e5e9ff}
+
+/* Interactive skill cards */
+.skill-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.skill{
+  position:relative;text-align:left;width:100%;
+  padding:21px 17px;background:white;border:1px solid #e5eaff;
+  border-radius:18px;box-shadow:0 8px 22px #263e8010;
+  cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s;
+  color:var(--text);
+}
+.skill:hover,.skill:focus-visible{
+  transform:translateY(-7px);border-color:#9360f4;
+  box-shadow:0 15px 35px #8150ee30;outline:none;
+}
+.skill .symbol{font-size:2rem}
+.skill h3{font-size:1rem;margin:8px 0}
+.skill p{font-size:.82rem;color:var(--muted);min-height:40px}
+.meter{height:7px;border-radius:99px;background:#e6eafb;overflow:hidden;margin-top:14px}
+.meter span{
+  display:block;height:100%;width:var(--level,70%);
+  border-radius:99px;
+  background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));
+}
+.skill small{display:block;margin-top:9px;color:#6840c7;font-weight:750}
+
+/* Skill popup */
+.skill-modal{
+  display:none;position:fixed;inset:0;z-index:1000;
+  padding:18px;background:rgba(5,9,28,.82);
+  backdrop-filter:blur(9px);align-items:center;justify-content:center;
+}
+.skill-modal.active{display:flex}
+.modal-content{
+  position:relative;width:min(540px,100%);max-height:88vh;
+  overflow-y:auto;padding:30px;border:1px solid #a78bfa66;
+  border-radius:24px;color:#eaf0ff;
+  background:linear-gradient(145deg,#121b3b,#24194a);
+  box-shadow:0 25px 80px #0008;
+  animation:pop .25s ease-out;
+}
+@keyframes pop{
+  from{opacity:0;transform:translateY(15px) scale(.97)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+.close-skill{
+  position:absolute;top:12px;right:15px;
+  width:39px;height:39px;border-radius:50%;
+  border:1px solid #ffffff30;background:#ffffff10;
+  color:white;font-size:1.5rem;cursor:pointer;
+}
+.modal-icon{font-size:2.7rem}
+.modal-content h2{font-size:1.8rem;color:#8be5ff;margin:8px 0}
+.modal-content .modal-description{color:#d1d9f5;margin-bottom:20px}
+.modal-content h3{font-size:1rem;margin:19px 0 8px;color:#fff}
+.modal-content ul{padding-left:21px}
+.modal-content li{color:#d1d9f5;margin:7px 0}
+.modal-practical{
+  padding:13px 15px;border-radius:12px;
+  background:#ffffff0c;border:1px solid #ffffff18;color:#dce6ff;
+}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{
+  overflow:hidden;background:white;border:1px solid #e8edfb;
+  border-radius:20px;box-shadow:var(--shadow);
+  transition:transform .25s;
+}
+.card:hover{transform:translateY(-4px)}
+.project-cover{
+  min-height:170px;display:grid;place-items:center;
+  color:white;font-size:3.5rem;
+  background:linear-gradient(135deg,#0b9fff,#793cf4);
+}
+.project-cover.orange{background:linear-gradient(135deg,#ff8b48,#f32fae)}
+.project-cover.green{background:linear-gradient(135deg,#00bfa6,#216be8)}
+.project-content{padding:22px}
+.project-content p{color:var(--muted);font-size:.94rem}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}
+.tag{background:#eef2ff;color:#5140a4;font-size:.76rem;padding:5px 9px;border-radius:99px;font-weight:700}
+.text-link{color:#5a37d6;font-weight:800;font-size:.9rem}
+.timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.timeline-item{border-left:4px solid #8a45f5;padding:8px 0 8px 20px}
+.timeline-item .date{color:#7345db;font-weight:800;font-size:.82rem}
+.timeline-item h3{margin:5px 0}
+.timeline-item p{color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px}
+.contact-panel{
+  border-radius:20px;background:linear-gradient(145deg,#111a3a,#24235b);
+  color:white;padding:28px;
+}
+.contact-panel p{color:#d1d8f7}
+.contact-line{display:flex;gap:12px;margin-top:18px;overflow-wrap:anywhere}
+form{padding:27px;border:1px solid #e5eaff;border-radius:20px;box-shadow:var(--shadow)}
+label{display:block;font-weight:750;font-size:.9rem;margin-bottom:6px}
+input,textarea{
+  width:100%;padding:13px 14px;border:1px solid #dce3f4;
+  border-radius:12px;margin-bottom:16px;outline:none;
+}
+input:focus,textarea:focus{border-color:#8150ee;box-shadow:0 0 0 3px #8150ee1c}
+textarea{min-height:125px;resize:vertical}
+.form-note{color:var(--muted);font-size:.82rem;margin-top:12px}
+footer{background:var(--navy);color:#d7def5;padding:25px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.top-link{color:#9ddcff}
+
+@media(max-width:900px){
+  .nav-links{gap:12px;font-size:.82rem}
+  .nav>.btn{display:none}
+  .skill-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .floating-note{right:-10px}
+}
+@media(max-width:680px){
+  .container{width:calc(100% - 28px)}
+  section{padding:55px 0}
+  .nav{min-height:64px}
+  .menu-btn{display:block}
+  .nav-links{
+    display:none;position:absolute;top:64px;left:0;right:0;
+    padding:12px 22px 18px;background:var(--navy);
+    flex-direction:column;align-items:stretch;gap:0;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:10px 0}
+  .hero-grid{grid-template-columns:1fr;text-align:center;gap:30px;padding:55px 0}
+  .hero-copy{margin:auto}
+  .hero-actions,.socials{justify-content:center}
+  .portrait-wrap{width:min(250px,78%)}
+  .floating-note{right:-18px;bottom:8px;font-size:.78rem}
+  .about-grid,.contact-grid,.timeline{grid-template-columns:1fr}
+  .about-art{min-height:240px}
+  .skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+  .skill{padding:16px 13px}
+  .skill h3{font-size:.94rem}
+  .skill p{font-size:.79rem}
+  .cards{grid-template-columns:1fr}
+  .info-grid{grid-template-columns:1fr}
+  .modal-content{padding:25px 20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}
+
+</style>
+</head>
+
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <span class="brand-mark">RK</span>
+      <span>Raj Kachare</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"
+      aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+   
+
+    <a class="btn" href="#contact">✉ Contact Me</a>
+  </div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Hello, welcome to my portfolio</div>
+        <h1>Hi, I'm <span class="gradient-text">Raj Kachare</span></h1>
+        <h2>MIS Professional • Finance Enthusiast • Analytical Thinker</h2>
+        <p class="hero-copy">
+          I work in MIS and have a strong interest in Accounting and Finance.
+          I enjoy working with data, preparing reports, improving processes,
+          and learning new technologies to solve practical business problems.
+        </p>
+
+        <div class="socials">
+          <a href="mailto:rajkachare2006@gmail.com" aria-label="Email">✉</a>
+          <a href="#projects" aria-label="Projects">PR</a>
+          <a href="#skills" aria-label="Skills">SK</a>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn" href="#projects">✦ View My Projects</a>
+           <a class="btn" href="resume.docx" download="Raj-Kachare-resume.docx">
+    ⬇ Download Resume
+  </a>
+        </div>
+      </div>
+
+      <div class="portrait-wrap">
+        <div class="portrait-ring">
+          <img src="profile.jpg.jpeg" alt="Raj Kachare"
+            onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid'">
+          <div class="portrait-placeholder" id="photoFallback">
+            <div><span>👋</span><strong>Add Your Photo</strong>
+            <br><small>Use profile.jpg.jpeg</small></div>
+          </div>
+        </div>
+        <div class="floating-note">✨ Learning • Growing • Creating</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+      <div>
+        <div class="section-heading">
+          <div class="eyebrow">A little about me</div>
+          <h2>Who Am <span class="gradient-text">I?</span></h2>
+        </div>
+
+        <p class="about-copy">
+          Hello! I'm Raj Kachare from Karad, Maharashtra. I am a B.Com IT
+          graduate currently working in MIS. I have a good understanding of
+          Accounts and Finance and an interest in Information Technology,
+          data analysis and financial reporting. I enjoy preparing reports,
+          maintaining accurate records and developing practical solutions
+          that improve business efficiency. I am always eager to learn
+          new skills and grow professionally.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-item"><strong>📍 Location</strong><span>Karad, Maharashtra</span></div>
+          <div class="info-item"><strong>✉ Email</strong><span>rajkachare2006@gmail.com</span></div>
+          <div class="info-item"><strong>🎯 Interests</strong><span>MIS, Finance, Technology</span></div>
+          <div class="info-item"><strong>💼 Focus</strong><span>Reporting, Data, Accounts</span></div>
+        </div>
+      </div>
+
+      <div class="about-art">
+        <div class="big-emoji">🚀</div>
+        <h3>Turning ideas into action.</h3>
+        <p>Every project is a chance to learn something new and improve.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section-alt" id="skills">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">What I bring</div>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <p>Click any skill card to explore its topics and practical applications.</p>
+      </div>
+
+      <div class="skill-grid">
+        <button class="skill" type="button" data-skill="excel">
+          <div class="symbol">📊</div>
+          <h3>MS Excel</h3>
+          <p>Formulas, data handling and reports</p>
+          <div class="meter"><span style="--level:80%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="mis">
+          <div class="symbol">🗂️</div>
+          <h3>MIS Reporting</h3>
+          <p>Business reports and data summaries</p>
+          <div class="meter"><span style="--level:78%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="finance">
+          <div class="symbol">💰</div>
+          <h3>Accounts & Finance</h3>
+          <p>Accounting concepts and financial records</p>
+          <div class="meter"><span style="--level:75%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="data">
+          <div class="symbol">📋</div>
+          <h3>Data Management</h3>
+          <p>Records, organization and accuracy</p>
+          <div class="meter"><span style="--level:75%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="computer">
+          <div class="symbol">💻</div>
+          <h3>Computer Skills</h3>
+          <p>Office tools and daily computer tasks</p>
+          <div class="meter"><span style="--level:75%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="html">
+          <div class="symbol">🌐</div>
+          <h3>HTML</h3>
+          <p>Web page structure and forms</p>
+          <div class="meter"><span style="--level:60%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="css">
+          <div class="symbol">🎨</div>
+          <h3>CSS</h3>
+          <p>Styling, layouts and responsive design</p>
+          <div class="meter"><span style="--level:60%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="problem">
+          <div class="symbol">🧩</div>
+          <h3>Problem Solving</h3>
+          <p>Logical thinking and practical solutions</p>
+          <div class="meter"><span style="--level:70%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="teamwork">
+          <div class="symbol">🤝</div>
+          <h3>Teamwork</h3>
+          <p>Communication and collaboration</p>
+          <div class="meter"><span style="--level:75%"></span></div>
+          <small>View Details ↗</small>
+        </button>
+
+        <button class="skill" type="button" data-skill="sql">
+  <div class="symbol">🗄️</div>
+  <h3>SQL</h3>
+  <p>Queries, data retrieval and database management</p>
+  <div class="meter"><span style="--level:60%"></span></div>
+  <small>View Details ↗</small>
+</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL DETAILS POPUP -->
+  <div class="skill-modal" id="skillModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true"
+      aria-labelledby="modalTitle" aria-describedby="modalDescription">
+
+      <button class="close-skill" id="closeSkill" type="button"
+        aria-label="Close details">×</button>
+
+      <div class="modal-icon" id="modalIcon">📊</div>
+      <h2 id="modalTitle">MS Excel</h2>
+      <p class="modal-description" id="modalDescription"></p>
+
+      <h3>📚 What I've Learned</h3>
+      <ul id="modalTopics"></ul>
+
+      <h3>💼 Practical Applications</h3>
+      <div class="modal-practical" id="modalPractical"></div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Things I've worked on</div>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>Projects and practical learning experiences.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="project-cover">🍽️</div>
+          <div class="project-content">
+            <h3>Restaurant Management System</h3>
+            <p>A project concept designed to organize restaurant operations,
+              manage menu items, record customer orders and support billing.</p>
+            <div class="tags">
+              <span class="tag">Management</span>
+              <span class="tag">Orders</span>
+              <span class="tag">Billing</span>
+            </div>
+            <a class="text-link"
+              href="mailto:rajkachare2006@gmail.com?subject=Restaurant%20Management%20System">
+              Ask About This Project →
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-cover orange">📈</div>
+          <div class="hero-actions">
+  <a class="btn btn-outline" href="#contact">Contact Me</a>
+</div><div class="project-content">
+            <h3>MIS Reporting & Data Analysis</h3>
+            <p>A professional learning area focused on organizing business
+              data, preparing reports and presenting information clearly.</p>
+            <div class="tags">
+              <span class="tag">MIS</span>
+              <span class="tag">Excel</span>
+              <span class="tag">Reporting</span>
+            </div>
+            <a class="text-link" href="#skills">Explore My Skills →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION AND EXPERIENCE -->
+  <section class="section-alt" id="education">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">My journey</div>
+        <h2>Education & <span class="gradient-text">Experience</span></h2>
+        <p>My academic background and professional development.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="date">GRADUATION</div>
+          <h3>B.Com — Information Technology</h3>
+          <p>Commerce and Information Technology.</p>
+          <p>Learning about business, computers and information systems.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">HIGHER SECONDARY</div>
+          <h3>HSC — Class 12</h3>
+          <p>Completed higher secondary education.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">SECONDARY</div>
+          <h3>SSC — Class 10</h3>
+          <p>Completed secondary school education.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">CURRENT EXPERIENCE</div>
+          <h3>MIS Professional</h3>
+          <p>Currently working in MIS.</p>
+          <p>Supporting reporting, data handling and record maintenance
+            as part of day-to-day work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Let's connect</div>
+        <h2>Contact <span class="gradient-text">Me</span></h2>
+        <p>For professional opportunities, collaboration or project enquiries.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <a class="btn"
+   href="mailto:rajkachare2006@gmail.com?subject=Portfolio%20Enquiry">
+  ✉ Email Me
+</a>
+          <h3>Have an idea or opportunity?</h3>
+          <p>Feel free to reach out to discuss work, projects or collaboration.</p>
+          <div class="contact-line">
+  ✉
+  <a href="mailto:rajkachare2006@gmail.com?subject=Portfolio%20Enquiry">
+    rajkachare2006@gmail.com
+  </a>
+</div>
+          <div class="contact-line">📍 <span>Karad, Maharashtra, India</span></div>
+          <div class="contact-line">💼 <span>MIS • Finance • Reporting</span></div>
+        </div>
+
+        <form id="contactForm">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email"
+            placeholder="you@example.com" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message"
+            placeholder="Write your message..." required></textarea>
+
+          <button class="btn" type="submit">✉ Prepare Email</button>
+          <p class="form-note">This form opens your email app. It does not
+            store messages online.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <a class="brand" href="#home">
+      <span class="brand-mark">RK</span><span>Raj Kachare</span>
+    </a>
+    <span>© <span id="year"></span> Raj Kachare. All rights reserved.</span>
+    <a class="top-link" href="#home">Back to Top ↑</a>
+  </div>
+</footer>
+
+<script>
+/* Skill information.
+   Edit these topics to match what you have actually learned. */
+const skillDetails = {
+  excel: {
+    title: "MS Excel",
+    icon: "📊",
+    description: "Using spreadsheets to organize, analyze and present data.",
+    topics: [
+      "Excel formulas and functions",
+      "Sorting, filtering and data formatting",
+      "IF, SUMIF and COUNTIF",
+      "VLOOKUP / XLOOKUP",
+      "Pivot Tables and charts",
+      "Preparing summaries and reports"
+    ],
+    practical: "Organizing records, preparing reports and creating clear data summaries."
+  },
+  mis: {
+    title: "MIS Reporting",
+    icon: "🗂️",
+    description: "Organizing business information and preparing reports.",
+    topics: [
+      "Daily, weekly and monthly reports",
+      "Data collection and consolidation",
+      "Checking report accuracy",
+      "Maintaining records",
+      "Presenting summaries"
+    ],
+    practical: "Supporting business reporting and helping teams access organized information."
+  },
+  finance: {
+    title: "Accounts & Finance",
+    icon: "💰",
+    description: "Knowledge of accounting concepts and financial information.",
+    topics: [
+      "Basic accounting principles",
+      "Debit and credit concepts",
+      "Income and expense records",
+      "Understanding financial statements",
+      "Financial data organization",
+      "Basic financial reporting"
+    ],
+    practical: "Understanding account records, organizing financial data and supporting reporting tasks."
+  },
+  data: {
+    title: "Data Management",
+    icon: "📋",
+    description: "Maintaining accurate, consistent and organized records.",
+    topics: [
+      "Data entry and validation",
+      "Sorting and filtering",
+      "Data cleaning",
+      "Record maintenance",
+      "Identifying missing or inconsistent data"
+    ],
+    practical: "Keeping information organized and checking data quality before reporting."
+  },
+  computer: {
+    title: "Computer Skills",
+    icon: "💻",
+    description: "Using computer tools to complete everyday office tasks.",
+    topics: [
+      "File and folder management",
+      "Email and internet usage",
+      "Document handling",
+      "Office productivity tools",
+      "Digital record organization"
+    ],
+    practical: "Completing routine office tasks and managing digital information efficiently."
+  },
+  html: {
+    title: "HTML",
+    icon: "🌐",
+    description: "Building the structure and content of web pages.",
+    topics: [
+      "HTML document structure",
+      "Headings, paragraphs and links",
+      "Images and lists",
+      "Forms and input fields",
+      "Semantic HTML elements"
+    ],
+    practical: "I have built my own portfolio website."
+  },
+  css: {
+    title: "CSS",
+    icon: "🎨",
+    description: "Designing web pages with layouts, colors and styling.",
+     description: "Basic Knowledge of CSS Styling and Layouts.",
+    topics: [
+      "Colors, typography and spacing",
+      "Responsive layouts",
+      "Hover effects and transitions",
+      "Basic animations"
+    ],
+    practical: "Basic understanding of responsive portfolio design."
+  },
+  problem: {
+    title: "Problem Solving",
+    icon: "🧩",
+    description: "Approaching challenges with logical and structured thinking.",
+    topics: [
+      "Identifying the root cause",
+      "Breaking tasks into steps",
+      "Checking data for errors",
+      "Comparing possible solutions",
+      "Learning from mistakes"
+    ],
+    practical: "Investigating reporting issues and finding practical ways to complete tasks."
+  },
+  teamwork: {
+    title: "Teamwork",
+    icon: "🤝",
+    description: "Working collaboratively to achieve shared goals.",
+    topics: [
+      "Clear communication",
+      "Sharing information",
+      "Coordinating tasks",
+      "Supporting colleagues",
+      "Meeting deadlines"
+    ],
+    practical: "Coordinating with team members to complete work accurately and on time."
+  },
+  sql: {
+  title: "SQL",
+  icon: "🗄️",
+  description: "Working with databases to retrieve and organize information.",
+  topics: [
+    "Basic SQL queries",
+    "SELECT, INSERT, UPDATE and DELETE",
+    "WHERE and ORDER BY",
+    "GROUP BY and aggregate functions",
+    "JOIN operations",
+    "Database basics"
+  ],
+  practical: "Retrieving, filtering and summarizing data from databases."
+}
+};
+
+/* Open and close skill popups */
+const modal = document.getElementById("skillModal");
+const closeButton = document.getElementById("closeSkill");
+let lastFocusedElement = null;
+
+function openSkill(key) {
+  const skill = skillDetails[key];
+  if (!skill) return;
+
+  lastFocusedElement = document.activeElement;
+
+  document.getElementById("modalIcon").textContent = skill.icon;
+  document.getElementById("modalTitle").textContent = skill.title;
+  document.getElementById("modalDescription").textContent = skill.description;
+  document.getElementById("modalPractical").textContent = skill.practical;
+
+  const list = document.getElementById("modalTopics");
+  list.replaceChildren();
+
+  skill.topics.forEach(topic => {
+    const li = document.createElement("li");
+    li.textContent = topic;
+    list.appendChild(li);
+  });
+
+  modal.classList.add("active");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  closeButton.focus();
+}
+
+function closeSkill() {
+  modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+
+  if (lastFocusedElement) lastFocusedElement.focus();
+}
+
+document.querySelectorAll("[data-skill]").forEach(card => {
+  card.addEventListener("click", () => openSkill(card.dataset.skill));
+});
+
+closeButton.addEventListener("click", closeSkill);
+
+modal.addEventListener("click", event => {
+  if (event.target === modal) closeSkill();
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && modal.classList.contains("active")) {
+    closeSkill();
+  }
+});
+
+/* Mobile navigation */
+const menuButton = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuButton.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", String(open));
+  menuButton.textContent = open ? "✕" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.textContent = "☰";
+  });
+});
+
+/* Footer year */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* Contact form: opens the visitor's email application */
+document.getElementById("contactForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const destination = "rajkachare2006@gmail.com";
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const subject = encodeURIComponent("Portfolio message from " + name);
+  const body = encodeURIComponent(
+    "From: " + name + " (" + email + ")\n\n" + message
+  );
+
+  window.location.href =
+    "mailto:" + destination + "?subject=" + subject + "&body=" + body;
+});
+</script>
+</body>
+</html>
