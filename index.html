@@ -1376,6 +1376,18 @@ document.addEventListener("keydown", event => {
     closeEduModal();
   }
 });
+  // Always open the portfolio from the Home section
+window.addEventListener("load", function () {
+  if (window.location.hash) {
+    history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search
+    );
+  }
+
+  window.scrollTo(0, 0);
+});
 
 </script>
 </body>
